@@ -1,5 +1,5 @@
 // BookingRequestForm.tsx
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import {
   Mail,
   Phone,
@@ -470,7 +470,7 @@ const BookingRequestForm: React.FC = () => {
           <ul className="space-y-4 text-gray-700">
             {bookingPolicies.map((policy, index) => (
               <li key={index} className="flex items-start">
-                <CheckCircle className="w-5 h-5 mt-1 mr-2 flex-shrink-0 text-emerald-500" />
+                <CheckCircle className="w-5 h-5 mt-1 mr-2 shrink-0 text-emerald-500" />
                 <p className="text-sm">{policy}</p>
               </li>
             ))}

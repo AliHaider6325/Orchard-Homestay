@@ -1,6 +1,6 @@
 // HomestayFooter.tsx
 import React from "react";
-import { Mail, Phone, MapPin, Feather } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 // 1. Import necessary icons from react-icons/fa
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
@@ -104,14 +104,14 @@ const HomestayFooter: React.FC = () => {
             </h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-emerald-500 mr-3 shrink-0" />
                 <p>
                   {LOCATION_INFO.address}, {LOCATION_INFO.cityState} <br />
                   {LOCATION_INFO.country} - {LOCATION_INFO.postalCode}
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-emerald-500 mr-3 shrink-0" />
                 <a
                   href={`tel:${CONTACT_INFO.phone.replace(/ /g, "")}`}
                   className="hover:text-white transition-colors"
@@ -121,7 +121,7 @@ const HomestayFooter: React.FC = () => {
               </div>
               {/* 3. Using FaWhatsapp for inline contact info section */}
               <div className="flex items-center">
-                <FaWhatsapp className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" />
+                <FaWhatsapp className="w-5 h-5 text-emerald-500 mr-3 shrink-0" />
                 <a
                   href={`https://wa.me/${cleanedWhatsappNumber}`}
                   target="_blank"
@@ -132,7 +132,7 @@ const HomestayFooter: React.FC = () => {
                 </a>
               </div>
               <div className="flex items-center">
-                <Mail className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-emerald-500 mr-3 shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className="hover:text-white transition-colors"

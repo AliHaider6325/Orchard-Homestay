@@ -107,61 +107,61 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
   if (!images || images.length === 0) return null;
 
   return (
-    <section id="gallery">
-      <div
-        className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 overflow-y-auto w-screen h-screen"
-        onClick={onClose}
+    // <section id="gallery">
+    <div
+      className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 overflow-y-auto w-screen h-screen"
+      onClick={onClose}
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
+        // Key Fix: Used flex-col and max-h-screen calculation to manage vertical space
+        className="relative w-full max-w-5xl bg-green-900 rounded-lg shadow-2xl flex flex-col max-h-[calc(100vh-2rem)]"
+        onClick={(e) => e.stopPropagation()}
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4 }}
-          // Key Fix: Used flex-col and max-h-screen calculation to manage vertical space
-          className="relative w-full max-w-5xl bg-green-900 rounded-lg shadow-2xl flex flex-col max-h-[calc(100vh-2rem)]"
-          onClick={(e) => e.stopPropagation()}
+        {/* Header (Fixed height) */}
+        <div
+          id="gallery"
+          className="p-4 border-b border-green-700 flex justify-between items-center flex-shrink-0"
         >
-          {/* Header (Fixed height) */}
-          <div
-            id="gallery"
-            className="p-4 border-b border-green-700 flex justify-between items-center flex-shrink-0"
+          <h3 className="text-xl font-semibold text-white">
+            {title} ({slideIndex + 1} / {images.length})
+          </h3>
+          <button
+            onClick={onClose}
+            className="text-white hover:text-yellow-400 p-2 rounded-full transition"
           >
-            <h3 className="text-xl font-semibold text-white">
-              {title} ({slideIndex + 1} / {images.length})
-            </h3>
-            <button
-              onClick={onClose}
-              className="text-white hover:text-yellow-400 p-2 rounded-full transition"
-            >
-              <X className="w-6 h-6" />
-            </button>
-          </div>
+            <X className="w-6 h-6" />
+          </button>
+        </div>
 
-          {/* Image Slideshow (Takes remaining space) */}
-          {/* Key Fix: Ensures this container takes max space and manages overflow */}
-          <div className="relative flex-grow flex items-center justify-center p-4 overflow-hidden">
-            <img
-              src={images[slideIndex]}
-              alt={`${title} photo ${slideIndex + 1}`}
-              // Key Fix: The combination of max-w-full, max-h-full, and object-contain
-              // is the most reliable way to resize large images to fit their container.
-              className="max-w-full max-h-full object-contain transition-opacity duration-300"
-            />
-            <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full z-10 transition"
-            >
-              &#10094;
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full z-10 transition"
-            >
-              &#10095;
-            </button>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+        {/* Image Slideshow (Takes remaining space) */}
+        {/* Key Fix: Ensures this container takes max space and manages overflow */}
+        <div className="relative flex-grow flex items-center justify-center p-4 overflow-hidden">
+          <img
+            src={images[slideIndex]}
+            alt={`${title} photo ${slideIndex + 1}`}
+            // Key Fix: The combination of max-w-full, max-h-full, and object-contain
+            // is the most reliable way to resize large images to fit their container.
+            className="max-w-full max-h-full object-contain transition-opacity duration-300"
+          />
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full z-10 transition"
+          >
+            &#10094;
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full z-10 transition"
+          >
+            &#10095;
+          </button>
+        </div>
+      </motion.div>
+    </div>
+    // </section>
   );
 };
 

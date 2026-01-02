@@ -1,7 +1,6 @@
 // ResponsiveMap.tsx
 
 import React from "react";
-import { AlertTriangle, CheckCircle } from "lucide-react";
 
 // The URL for the Google Maps iframe embed.
 interface ResponsiveMapProps {
