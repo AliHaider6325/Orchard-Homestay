@@ -1,7 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
-import { section } from "framer-motion/client";
 
 // --- animations (INLINE, no directory change) ---
 const fadeUp = {
