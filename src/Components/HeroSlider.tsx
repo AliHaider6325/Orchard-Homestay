@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "./src/assets/home.jpg",
-  "./src//assets/outview.png",
-  "./src//assets/Home11.jpg",
+  "/assets/home.jpg",
+  "/assets/outview.png",
+  "/assets/Home11.jpg",
 ];
 
 const HeroSlider = () => {

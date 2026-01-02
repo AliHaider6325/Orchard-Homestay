@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto h-20 flex items-center justify-between pr-10">
         <div className="flex items-center">
           <img
-            src="./src/assets/logo.png"
+            src="/assets/logo.png"
             alt="Orchard Homestay Logo"
             className="h-45 md:h-45 sm:h-45 object-contain"
           />

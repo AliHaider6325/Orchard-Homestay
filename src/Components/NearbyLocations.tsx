@@ -21,12 +21,12 @@ const locations: LocationData[] = [
     description:
       "Bungus Valley is a serene, untouched meadow in Jammu & Kashmir known for its lush greenery and Himalayan beauty.",
     distance: "25km Away",
-    imageUrl: "./src/assets/locations/bv2.jpg",
+    imageUrl: "/assets/locations/bv2.jpg",
     galleryImages: [
-      "./src/assets/locations/bv1.jfif",
-      "./src/assets/locations/bv2.jpg",
-      "./src/assets/locations/bv3.jpg",
-      "./src/assets/locations/bv4.webp",
+      "/assets/locations/bv1.jfif",
+      "/assets/locations/bv2.jpg",
+      "/assets/locations/bv3.jpg",
+      "/assets/locations/bv4.webp",
     ],
   },
   {
@@ -35,12 +35,12 @@ const locations: LocationData[] = [
     description:
       "Tangdhar is a scenic town in Jammu & Kashmir, famous for its mountain views, rivers, and peaceful border-area charm.",
     distance: "45km Away",
-    imageUrl: "./src/assets/locations/t1.webp",
+    imageUrl: "/assets/locations/t1.webp",
     galleryImages: [
-      "./src/assets/locations/t1.webp",
-      "./src/assets/locations/t2.jpg",
-      "./src/assets/locations/t3.jfif",
-      "./src/assets/locations/t4.jfif",
+      "/assets/locations/t1.webp",
+      "/assets/locations/t2.jpg",
+      "/assets/locations/t3.jfif",
+      "/assets/locations/t4.jfif",
     ],
   },
   {
@@ -49,12 +49,12 @@ const locations: LocationData[] = [
     description:
       "Karen is a quiet border village in Jammu & Kashmir, known for its scenic riverside views and gateway to the Karnah Valley.",
     distance: "25km Away",
-    imageUrl: "./src/assets/locations/k2.webp",
+    imageUrl: "/assets/locations/k2.webp",
     galleryImages: [
-      "./src/assets/locations/k1.webp",
-      "./src/assets/locations/k2.webp",
-      "./src/assets/locations/k3.webp",
-      "./src/assets/locations/k4.webp",
+      "/assets/locations/k1.webp",
+      "/assets/locations/k2.webp",
+      "/assets/locations/k3.webp",
+      "/assets/locations/k4.webp",
     ],
   },
   {
@@ -63,12 +63,12 @@ const locations: LocationData[] = [
     description:
       "Lolab Valley is a lush green valley in Jammu & Kashmir, famous for its forests, meadows, and peaceful natural beauty.",
     distance: "20km Away",
-    imageUrl: "./src/assets/locations/l1.webp",
+    imageUrl: "/assets/locations/l1.webp",
     galleryImages: [
-      "./src/assets/locations/l1.webp",
-      "./src/assets/locations/l2.jfif",
-      "./src/assets/locations/l3.webp",
-      "./src/assets/locations/l4.jpg",
+      "/assets/locations/l1.webp",
+      "/assets/locations/l2.jfif",
+      "/assets/locations/l3.webp",
+      "/assets/locations/l4.jpg",
     ],
   },
 ];

@@ -62,7 +62,7 @@ const HomestayFooter: React.FC = () => {
           <div>
             <div className="flex items-center text-white mb-4">
               <img
-                src="./src/assets/logo.png"
+                src="/assets/logo.png"
                 alt={`${HOMESTAY_NAME} Logo`}
                 className="w-50 h-auto"
               />
