@@ -42,7 +42,7 @@ const GALLERY_DATA: Album[] = [
   },
   {
     title: "Interiors",
-    cover: "/assets/interior.jpg",
+    cover: "/assets/gallery/interiors/2.png",
     description: "Cozy rooms, traditional wooden accents, and common areas.",
     images: [
       "/assets/gallery/interiors/1.jpg",
